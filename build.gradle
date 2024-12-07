@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    implementation 'org.openjfx:javafx-controls:21.0.1'
+    implementation 'org.openjfx:javafx-fxml:21.0.1'
+    implementation 'com.itextpdf:itext7-core:7.2.3'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+javafx {
+    version = '21.0.1'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+application {
+    mainClass = 'org.example.laucher.Main'
+}
+
+shadowJar {
+    archiveClassifier.set('all')
+    manifest {
+        attributes(
+                'Main-Class': 'org.example.laucher.Main'
+        )
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'org.example.laucher.Main'
+        )
+    }
+}
+
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8' // Setează encoding-ul, dacă e necesar
+}
+
+test {
+    useJUnitPlatform()
+}
