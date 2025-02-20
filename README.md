@@ -41,5 +41,4 @@
 
 ---
 
-## Project Structure
 
