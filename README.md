@@ -1,4 +1,4 @@
-# BookStore
+# BookStore - Java Desktop App
 
 ## Overview
 
