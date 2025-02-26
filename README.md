@@ -1,18 +1,18 @@
 # 📚 BookStore - Java Desktop App
 
-## 📝 Overview
+## Overview
 
-**BookStore** is a Java-based desktop application that serves as a management system for a bookstore. It is designed to handle various functionalities such as 📦 book inventory management, 💰 sales tracking, 🔑 user authentication, and 🔄 role-based access. The project showcases a well-structured layered architecture with service, repository, and UI components.
+**BookStore** is a Java-based desktop application that serves as a management system for a bookstore. It is designed to handle various functionalities such as book inventory management, sales tracking, user authentication, and role-based access. The project showcases a well-structured layered architecture with service, repository, and UI components.
 
 ---
 
-## ✨ Features
+##  Features
 
 ### 🔐 User Authentication
-- 🔑 Login and register functionality for employees and administrators.
-- 🎭 Role-based access control to distinguish between administrators and employees.
+-  Login and register functionality for employees and administrators.
+-  Role-based access control to distinguish between administrators and employees.
 
-### 📖 Book Management
+###  Book Management
 - Add, update, and delete books in the inventory.
 - Display a list of all books with details like title, author, quantity and price.
 
@@ -22,7 +22,7 @@
 
 ### 🛠️ Admin Features
 - Manage users: Add, delete, and update roles for employees.
-- 📊 Generate detailed reports for employee performance.
+- Generate detailed reports for employee performance.
 
 ### 🖥️ Responsive UI
 - User-friendly graphical interface built with JavaFX.
